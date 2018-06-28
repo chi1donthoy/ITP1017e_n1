@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteRule "index.html" "index.php"
+RewriteRule "sanpham.html" "sanpham.php"
+RewriteRule "^chitiet/(.*)-(.*).html$" "index.php?page=chitiettin&idTin=$1&title=$2"
+RewriteRule "^dm/(.*)-(.*).html$" "index.php?page=danhmucbaiviet&iddm=$1&title=$2"
+RewriteRule "^danhmuc/(.*)/(.*)/(.*)-(.*).html$" "index.php?page=danhmucbaiviet&iddm=$1&s=$2&p=$3&title=$4"
